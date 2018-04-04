@@ -1,3 +1,0 @@
-/mnt/c/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/aadcc2c40dab68a95374017995be48233063b305/CMakeFiles/edit_cache.dir
-/mnt/c/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/aadcc2c40dab68a95374017995be48233063b305/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/aadcc2c40dab68a95374017995be48233063b305/CMakeFiles/cholmod-test.dir

@@ -1,3 +1,0 @@
-C:/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/8caf9177abcac060b9a1d922dc1cef659dbe50b6/CMakeFiles/cholmod-test.dir
-C:/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/8caf9177abcac060b9a1d922dc1cef659dbe50b6/CMakeFiles/ALL_BUILD.dir
-C:/Users/t.vogl/Documents/repos/conan-suitesparse/test_package/build/8caf9177abcac060b9a1d922dc1cef659dbe50b6/CMakeFiles/ZERO_CHECK.dir
