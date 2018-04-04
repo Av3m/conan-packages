@@ -1,0 +1,28 @@
+diff --git a/lib/util_mosq.c b/lib/util_mosq.c
+index 6f6bb49..8cb26e0 100644
+--- a/lib/util_mosq.c
++++ b/lib/util_mosq.c
+@@ -359,6 +359,8 @@ FILE *_mosquitto_fopen(const char *path, const char *mode, bool restrict_read)
+ 			PACL pacl = NULL;
+ 			char username[UNLEN + 1];
+ 			int ulen = UNLEN;
++            int fd;
++            FILE *fptr;
+ 			SECURITY_DESCRIPTOR sd;
+ 
+ 			GetUserName(username, &ulen);
+@@ -386,12 +388,12 @@ FILE *_mosquitto_fopen(const char *path, const char *mode, bool restrict_read)
+ 
+ 			LocalFree(pacl);
+ 
+-			int fd = _open_osfhandle((intptr_t)hfile, 0);
++			fd = _open_osfhandle((intptr_t)hfile, 0);
+ 			if (fd < 0) {
+ 				return NULL;
+ 			}
+ 
+-			FILE *fptr = _fdopen(fd, mode);
++			fptr = _fdopen(fd, mode);
+ 			if (!fptr) {
+ 				_close(fd);
+ 				return NULL;
