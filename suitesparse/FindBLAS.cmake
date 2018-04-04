@@ -1,0 +1,5 @@
+find_package(SuiteSparse)
+set(BLAS_FOUND ${SuiteSparse_FOUND})
+set(BLAS_LIBRARIES ${SuiteSparse_LIBRARIES})
+set(BLAS_LIBRARY ${SuiteSparse_LIBRARIES})
+set(BLAS_INCLUDE_DIRS ${SuiteSparse_INCLUDE_DIRS})

@@ -1,0 +1,5 @@
+find_package(SuiteSparse)
+set(LAPACK_FOUND ${SuiteSparse_FOUND})
+set(LAPACK_LIBRARIES ${SuiteSparse_LIBRARIES})
+set(LAPACK_LIBRARY ${SuiteSparse_LIBRARIES})
+set(LAPACK_INCLUDE_DIRS ${SuiteSparse_INCLUDE_DIRS})

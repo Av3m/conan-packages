@@ -1,0 +1,13 @@
+--- flann_src/src/cpp/flann/util/serialization.h.orig	Tue Jan 10 20:37:31 2017
++++ flann_src/src/cpp/flann/util/serialization.h	Tue Jan 10 20:53:54 2017
+@@ -89,7 +89,9 @@
+ BASIC_TYPE_SERIALIZER(float);
+ BASIC_TYPE_SERIALIZER(double);
+ BASIC_TYPE_SERIALIZER(bool);
+-
++#ifdef _MSC_VER
++BASIC_TYPE_SERIALIZER(unsigned __int64);
++#endif
+ 
+ 
+ // serializer for std::vector
